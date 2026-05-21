@@ -16,28 +16,14 @@ Docker汉化  Docker中文版  Docker Desktop汉化 Docker Windows Docker MAC
 
 ## 下载指南
 
-Docker Desktop 4.74开始，Electron 需要校验完整性。
+Docker Desktop 4.74版本开始，需要进行完整性校验。
 Release 中的汉化包为 `app-*.zip`：
 - Windows 包含 `app.asar`、`app.asar.unpacked` 和已同步完整性校验的 `Docker Desktop.exe`。
 - macOS / Linux 包含 `app.asar` 和 `app.asar.unpacked`。
 
-
-
-- Windows
-  - 使用 Intel/AMD 的 x64 芯片（**较为普遍**），则下载 DockerDesktop-x.x.x-Windows-x86.exe（本体）和 app-Windows-x86.asar（汉化包）
-  - 使用 arm 芯片（**较为稀有**），则下载 DockerDesktop-x.x.x-Windows-arm.exe（本体）和 app-Windows-arm.asar（汉化包）
-- Mac
-  - 使用 M 系列芯片（**新款**），则下载 DockerDesktop-x.x.x-Mac-apple.dmg（本体）和 app-Mac-apple.asar （汉化包）
-  - 使用 Intel x64 芯片（**2020前旧款**），则下载 DockerDesktop-x.x.x-Mac-intel.dmg（本体）和 app-Mac-intel.asar （汉化包）
-- Linux 
-  - Ubuntu/Debian  
-    - 使用 Intel/AMD 的 x64 芯片（**较为普遍**），则下载 DockerDesktop-x.x.x-Debian-x86.deb（本体）和 app-Debian-x86.asar（汉化包）
-    - 使用 arm 芯片（**较为稀有**），暂不支持
-  - Fedora/Arch/RHEL 暂不支持
-
 ## 使用方法
 1. 关闭Docker Desktop
-2. 在Docker安装目录找到app.asar文件并将其备份，防止出现意外。
+2. 在Docker安装目录找到app.asar文件和app.asar.unpacked文件夹并将它们备份，防止出现意外。
    - Windows下默认为`C:\Program Files\Docker\Docker\frontend\resources`
    - Macos下默认为`/Applications/Docker.app/Contents/MacOS/Docker Desktop.app/Contents/Resources`
    - Ubuntu/Debian下默认为`/opt/docker-desktop/resources`
